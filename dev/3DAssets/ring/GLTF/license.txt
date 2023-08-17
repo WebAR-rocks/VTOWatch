@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vilya. Elrond's Ring
+* source:	https://sketchfab.com/3d-models/vilya-elronds-ring-e59d586271104d7cbcf73b7a7013032a
+* author:	taigo (https://sketchfab.com/taigo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vilya. Elrond's Ring" (https://sketchfab.com/3d-models/vilya-elronds-ring-e59d586271104d7cbcf73b7a7013032a) by taigo (https://sketchfab.com/taigo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

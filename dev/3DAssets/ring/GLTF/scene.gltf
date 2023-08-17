@@ -1,0 +1,269 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3659,
+      "max": [
+        1.0389599800109863,
+        0.5416300296783447,
+        1.0405299663543701
+      ],
+      "min": [
+        -1.0389599800109863,
+        -0.5416300296783447,
+        -0.9897500276565552
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 43908,
+      "componentType": 5126,
+      "count": 3659,
+      "max": [
+        0.9994654059410095,
+        0.9988631010055542,
+        1.0
+      ],
+      "min": [
+        -0.9994654059410095,
+        -0.9988631010055542,
+        -0.9998642802238464
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 21282,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 87816,
+      "componentType": 5126,
+      "count": 96,
+      "max": [
+        0.9267200231552124,
+        0.9267200231552124,
+        0.3499999940395355
+      ],
+      "min": [
+        -0.9267200231552124,
+        -0.9267200231552124,
+        -0.008580000139772892
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 88968,
+      "componentType": 5126,
+      "count": 96,
+      "max": [
+        0.8539888262748718,
+        0.8539888262748718,
+        1.0
+      ],
+      "min": [
+        -0.8539888262748718,
+        -0.8539888262748718,
+        0.5004838109016418
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 85128,
+      "componentType": 5125,
+      "count": 546,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "taigo (https://sketchfab.com/taigo)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/vilya-elronds-ring-e59d586271104d7cbcf73b7a7013032a",
+      "title": "Vilya. Elrond's Ring"
+    },
+    "generator": "Sketchfab-11.60.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 87312,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 90120,
+      "byteOffset": 87312,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 177432,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_transmission"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.4723073204,
+          0.3649960066,
+          0.271947497,
+          1.0
+        ],
+        "roughnessFactor": 0.1097560975609756
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.06097560975609756,
+        0.06097560975609756,
+        0.06097560975609756
+      ],
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.018292682926829285
+        }
+      },
+      "name": "pedra",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.02416948569423713,
+          0.009939626133941816,
+          0.3050180057911,
+          0.9817073170731707
+        ],
+        "metallicFactor": 0.9163490854,
+        "roughnessFactor": 0.0383003049
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Gem_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.18852978944778442,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.186202261453263e-17,
+        -0.18852978944778442,
+        0.0,
+        0.0,
+        0.18852978944778442,
+        4.186202261453263e-17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3,
+        4
+      ],
+      "name": "Plane"
+    },
+    {
+      "mesh": 0,
+      "name": "Plane_0"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        0.4464000000000001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.40561,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3819700000000001,
+        0.0,
+        0.0,
+        -0.0,
+        0.95891,
+        1.0
+      ],
+      "name": "Gem"
+    },
+    {
+      "mesh": 1,
+      "name": "Gem_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
