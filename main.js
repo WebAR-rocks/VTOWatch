@@ -40,7 +40,7 @@ const wristModelCommonSettings = {
 const _settings = {
   VTOModes: {
     wrist: Object.assign({      
-      NNsPaths: [NNPath + 'NN_WRISTBACK_17.json']
+      NNsPaths: [NNPath + 'NN_WRISTBACK_19.json']
     }, wristModesCommonSettings)
   },
 
