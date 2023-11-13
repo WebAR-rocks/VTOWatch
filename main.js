@@ -1,7 +1,7 @@
 const NNPath = 'neuralNets/';
 
 const wristModesCommonSettings = {
-  threshold: 0.9, // detection sensitivity, between 0 and 1
+  threshold: 0.7, // detection sensitivity, between 0 and 1
   
   poseLandmarksLabels: [
   // wristRightBottom not working
@@ -40,7 +40,7 @@ const wristModelCommonSettings = {
 const _settings = {
   VTOModes: {
     wrist: Object.assign({      
-      NNsPaths: [NNPath + 'NN_WRISTBACK_19.json']
+      NNsPaths: [NNPath + 'NN_WRISTBACK_20.json']
     }, wristModesCommonSettings)
   },
 
