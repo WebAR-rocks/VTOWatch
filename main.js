@@ -1,12 +1,12 @@
 const NNPath = 'neuralNets/';
 
 const wristModesCommonSettings = {
-  threshold: 0.7, // detection sensitivity, between 0 and 1
+  threshold: 0.8, // detection sensitivity, between 0 and 1
   
   poseLandmarksLabels: [
   // wristRightBottom not working
-    "wristBack", "wristLeft", "wristRight", "wristPalm", "wristPalmTop", "wristBackTop", "wristRightBottom", "wristLeftBottom"
-    //"wristBack", "wristRight", "wristPalm", "wristPalmTop", "wristBackTop", "wristLeft"
+    //"wristBack", "wristLeft", "wristRight", "wristPalm", "wristPalmTop", "wristBackTop", "wristRightBottom", "wristLeftBottom" // more accurate
+    "wristBack", "wristRight", "wristPalm", "wristPalmTop", "wristBackTop", "wristLeft" // more stable
    ],
   isPoseFilter: true,
 
@@ -37,10 +37,11 @@ const wristModelCommonSettings = {
   quaternion: [0,0,0,1], // Format: X,Y,Z,W (and not W,X,Y,Z like Blender)
 };
 
+
 const _settings = {
   VTOModes: {
     wrist: Object.assign({      
-      NNsPaths: [NNPath + 'NN_WRISTBACK_20.json']
+      NNsPaths: [NNPath + 'NN_WRISTBACK_21.json']
     }, wristModesCommonSettings)
   },
 
@@ -89,9 +90,15 @@ function main(){
   // get canvases and size them:
   const handTrackerCanvas = document.getElementById('handTrackerCanvas');
   const VTOCanvas = document.getElementById('VTOCanvas');
-
+  
   setFullScreen(handTrackerCanvas);
   setFullScreen(VTOCanvas);
+
+  // init change VTO button:
+  ChangeCameraHelper.init({
+    canvases: [handTrackerCanvas, VTOCanvas],
+    DOMChangeCameraButton: document.getElementById('changeCamera')
+  })
 
   // initial VTO mode:
   const initialModelSettings = _settings.models[_settings.initialModel];
@@ -270,6 +277,11 @@ function hide_instructions(){
   setTimeout(function(){
     domInstructions.parentNode.removeChild(domInstructions);
   }, 800);
+}
+
+
+function change_camera(){
+  ChangeCameraHelper.change_camera();
 }
 
 

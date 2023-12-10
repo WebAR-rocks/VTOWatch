@@ -15,10 +15,14 @@
 
     <!-- THREE.JS EXTENSIONS -->
     <script src="libs/three/v136/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="libs/three/v136/examples/js/loaders/RGBELoader.js"></script
+    <script src="libs/three/v136/examples/js/loaders/RGBELoader.js"></script>
 
     <!-- WEBARROCKSHAND THREEJS VTO HELPER -->
     <script src="helpers/HandTrackerThreeHelper.js"></script>
+
+    <!-- change camera helper -->
+    <script src="helpers/ChangeCameraHelper.js"></script>
+    
 
     <!-- WEBARROCKSHAND POINTS STABILIZER -->
     <script src="helpers/landmarksStabilizers/OneEuroLMStabilizer.js"></script>
@@ -107,6 +111,19 @@
         max-width: 50vw;
       }
 
+      #changeCamera {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        bottom: 6px;
+        left: 6px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        font-variant: small-caps;
+        border: none;
+        padding: 12px;
+      }
+
     </style>
   </head>
   <body>
@@ -134,6 +151,8 @@
       <!-- Canvas used by the hand tracker and displaying the video -->
       <canvas id='handTrackerCanvas'></canvas>
     </div>
+
+    <button onclick='change_camera()' id='changeCamera'>Change camera</button>
   </body>
 </html>
  
